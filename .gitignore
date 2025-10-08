@@ -1,0 +1,6 @@
+# Neovim
+nvim/lazy-lock.json
+nvim/undodir/
+# OS cruft
+.DS_Store
+Thumbs.db
