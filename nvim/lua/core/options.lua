@@ -13,9 +13,10 @@ o.ignorecase = true
 o.smartcase = true
 o.scrolloff = 8
 
+local undodir = vim.fn.stdpath('state') .. '/undodir'
 o.undofile = true
-o.undodir = vim.fn.stdpath('state') .. '/undodir'
-vim.fn.mkdir(o.undodir:get(), 'p')
+o.undodir = undodir
+vim.fn.mkdir(undodir, 'p')
 
 if vim.fn.executable('rg') == 1 then
   o.grepprg = 'rg --vimgrep'
