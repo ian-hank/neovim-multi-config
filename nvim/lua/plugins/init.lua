@@ -1,9 +1,12 @@
-require('lazy').setup({
+require("lazy").setup({
   spec = {
-    { import = 'plugins.specs.ui' },
-    { import = 'plugins.specs.treesitter' },
-    { import = 'plugins.specs.telescope' },
+    { import = "plugins.specs.ui" },
+    { import = "plugins.specs.treesitter" },
+    { import = "plugins.specs.telescope" },
+    { import = "plugins.specs.alpha" },
   },
-  install = { colorscheme = { 'tokyonight' } },
+  install = { colorscheme = { "kanagawa" } },
+  rocks = { enabled = false },   -- silences luarocks warnings
   checker = { enabled = false },
 })
+

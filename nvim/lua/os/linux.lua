@@ -1,1 +1,1 @@
--- Linux/WSL generic tweaks can go here
+-- Linux/WSL generic tweaks will go here

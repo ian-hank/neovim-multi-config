@@ -1,1 +1,1 @@
--- macOS tweaks can go here (fonts if using GUI, pbcopy, etc.)
+-- macOS tweaks will go here

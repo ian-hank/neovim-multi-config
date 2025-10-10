@@ -1,3 +1,3 @@
-# Neovim config (macOS, WSL, Windows)
+# Neovim config 
 
-This repo contains my Neovim config. It’s OS-aware (macOS/WSL/Windows) and kept minimal.
+This repo contains my Neovim config. It’s meant to be OS (macOS/WSL/Windows) and keyboard aware.

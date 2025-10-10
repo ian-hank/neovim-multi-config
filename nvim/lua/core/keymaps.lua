@@ -8,6 +8,6 @@ map('n', '<leader>fg', function() pcall(require('telescope.builtin').live_grep) 
 map('n', '<leader>fb', function() pcall(require('telescope.builtin').buffers) end,    { desc = 'Buffers' })
 map('n', '<leader>fh', function() pcall(require('telescope.builtin').help_tags) end,  { desc = 'Help' })
 
--- LSP placeholders (will work once we add LSP later)
+-- LSP placeholders 
 map('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition', silent = true })
 map('n', 'K',  vim.lsp.buf.hover,      { desc = 'Hover', silent = true })

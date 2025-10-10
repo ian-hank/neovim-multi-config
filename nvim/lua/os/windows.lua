@@ -1,1 +1,1 @@
--- Windows/WSL tweaks can go here (clipboard, shell, etc.)
+-- Windows/WSL tweaks will go here
