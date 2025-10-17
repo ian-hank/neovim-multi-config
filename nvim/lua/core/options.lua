@@ -8,12 +8,13 @@ o.cursorline = true
 o.wrap = false
 o.scrolloff = 8
 o.laststatus = 3        -- global statusline
-o.cmdheight = 0         -- modern cmdline UI 
+o.cmdheight = 1         -- modern cmdline UI 
 
 -- tabs/indent
 o.expandtab = true
-o.shiftwidth = 2
-o.tabstop = 2
+o.shiftwidth = 4
+o.tabstop = 4
+o.softtabstop = 4
 o.smartindent = true
 
 -- search
@@ -28,6 +29,10 @@ vim.fn.mkdir(undodir, 'p')
 
 -- grep integration
 if vim.fn.executable('rg') == 1 then
-  o.grepprg = 'rg --vimgrep'
-  o.grepformat = '%f:%l:%c:%m'
+    o.grepprg = 'rg --vimgrep'
+    o.grepformat = '%f:%l:%c:%m'
 end
+
+-- project override
+vim.opt.exrc = true    -- allow project-local configs
+vim.opt.secure = true  -- disallows unsafe commands in those files
